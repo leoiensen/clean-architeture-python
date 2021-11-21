@@ -13,5 +13,5 @@ class Users(Base):
     password = Column(String, nullable=False)
     id_pet = relationship("Pets")
 
-    def __rep__(self):
-        return f"Usr [name={self.name}]"
+    def __repr__(self):
+        return f"User [name={self.name}]"
